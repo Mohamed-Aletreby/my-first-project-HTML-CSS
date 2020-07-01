@@ -1,0 +1,1385 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito",sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.home-section {
+    width: 100%;
+    height: 125vh;
+    background-color: #F4FEFF;
+}
+
+div.navbar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: #fff;
+}
+
+div.navbar ul li.logo {
+    width: 50%;
+    float: left;
+}
+
+div.navbar ul li.logo img {
+    margin: 15px 0 0 152px;
+}
+
+div.navbar ul div.items {
+    width: 50%;
+    float: right;
+}
+
+div.navbar ul div.items> li {
+    float: left;
+    margin: 30px 50px 0 0;
+    cursor: pointer;
+}
+
+div.navbar ul div.items> li> a {
+    color: #450b78;
+    font-size: 17px;
+    padding: 15px 7px ;
+}
+
+div.navbar ul div.items> li> a.active:after {
+    content:"" ;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #a60dcf;
+    margin-top: 8px;
+    transition: width 0.5s;
+}  
+ 
+div.navbar ul div.items> li> a:after {
+    content:"" ;
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #a60dcf;
+    margin-top: 8px;
+    transition: width 0.5s;
+} 
+
+div.navbar ul div.items> li> a:hover:after {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    left: -20%;
+    width: 150px;
+    height: 120px;
+    background-color: #fff;
+    visibility: hidden;
+    transition: visibility 0.5s;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+}
+
+.dropdown .dropdown-menu> li {
+    margin: 15px;
+}
+
+.dropdown .dropdown-menu> li.dropdown-menu-item1::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    background-color: #a60dcf;
+    transition: width 0.5s;
+
+}
+
+.dropdown .dropdown-menu> li.dropdown-menu-item2::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 57px;
+    left: 0;
+    background-color: #a60dcf;
+    transition: width 0.5s;
+}
+
+.dropdown .dropdown-menu> li.dropdown-menu-item3::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background-color: #a60dcf;
+    transition: width 0.5s;
+}
+
+.dropdown .dropdown-menu> li:hover {
+    margin-left: 20px;
+}
+
+.dropdown .dropdown-menu> li:hover::before {
+    width: 7%;
+}
+/* End Navigation Bar */
+
+/* Start Home Section */
+.home {
+    width: 80%;
+    top: 40%;
+    left: 130px;
+    position: absolute;
+    color: #fff;
+}
+
+.app-text {
+    width: 50%;
+    float: left;
+}
+
+.app-text span {
+    color: #2b044d;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+.app-text h1 {
+    font-size: 65px;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 40px;
+    color: #2b044d;
+    line-height: 1.3;
+}
+
+.app-text p {
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 30px;
+    color: #707b8e;
+}
+
+.app-text div.button {
+    margin-left: 40px;
+    padding: 35px 35px 35px 0;
+    overflow: hidden;
+}
+
+.app-text div.button a.right {
+    float: left;
+    border-radius: 30px;
+    background: #f9218d;
+    transition: opacity 0.5s;
+}
+
+.app-text div.button a.right span {
+    display: block;
+    text-align: center;
+    padding: 20px 30px 20px 0px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.app-text div.button a.right:hover {
+    opacity: 0.6;
+}
+    
+.app-text div.button a.left {
+    float: right;
+    position: relative;
+    left: -300px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #d852e8;
+    transition: background-color 0.5s;
+}
+
+.app-text div.button a.left i {
+    color: #fff;
+    border-radius: 30px;
+    position: absolute;
+    top: 23px;
+    left: 24px;
+}
+
+.app-text div.button a.left:hover {
+    background-color: #da1276;
+}
+
+.app-picture {
+    width: 50%;
+    float: right;
+}
+
+.app-picture img {
+    width: 85%;
+    margin-top: -140px;
+    margin-left: 100px;
+    padding-left: 50px;
+}
+
+/* End Home Section */
+
+/* Start Feature Section */
+div.feature {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+div.feature-title div.feature-title-picture {
+    width: 40%;
+    float: left;
+}
+
+div.feature-title div.feature-title-picture img {
+    width: 90%;
+}
+
+div.feature-title div.feature-title-text {
+    width: 60%;
+    float: right;
+}
+
+div.feature-title div.feature-title-text h2 {
+    font-size: 50px;
+    color: #2b044d;
+    margin-left: 35px;
+}
+
+
+div.feature-title div.feature-title-text div.feature-items {
+    width: 90%;
+    margin: auto;
+    margin-top: 120px;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up {
+    width: 100%;
+    height: 30vh;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item1, div.feature-item2{
+    width: 50%;
+    box-sizing: border-box;
+    
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item1 {
+    float: left;
+    padding: 15px 0 15px 90px;
+    position: relative;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item1 h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item1 p {
+    color: #707b8e;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item1 span {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    background-color: #6f42c1;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item1 span i {
+    display: block;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item2 {
+    float: right;
+    padding: 15px 0 15px 90px;
+    position: relative;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item2 h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item2 p {
+    color: #707b8e;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item2 span {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    background-color: #6f42c1;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+div.feature-title-text div.feature-items div.feature-items-up  div.feature-item2 span i {
+    display: block;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+}
+
+
+
+
+
+div.feature-title-text div.feature-items div.feature-items-down {
+    width: 100%;
+    height: 30vh;
+     
+
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item3, div.feature-item4{
+    width: 50%;
+    box-sizing: border-box;
+    
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item3 {
+    float: left;
+    padding: 15px 0 15px 90px;
+    position: relative;
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item3 h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item3 p {
+    color: #707b8e;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item3 span {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    background-color: #6f42c1;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item3 span i {
+    display: block;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item4 {
+    float: right;
+    padding: 15px 0 15px 90px;
+    position: relative;
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item4 h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item4 p {
+    color: #707b8e;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item4 span {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    background-color: #6f42c1;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+div.feature-title-text div.feature-items div.feature-items-down  div.feature-item4 span i {
+    display: block;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+}
+
+
+
+/* End Feature Section */
+
+/* Start Applic App Section */
+div.applic-app {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    background-color: #F4FEFF;
+    /*background-color: #712fda;*/
+}
+
+div.applic-app div.applic-app-text {
+    float: left;
+    width: 35%;
+    height: 100%;
+    margin-top: 200px;
+    margin-left: 170px;
+    /*border: 1px solid #000;
+    background-color: #fff;*/
+}
+
+div.applic-app div.applic-app-text h3 {
+    color: #2b044d;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+div.applic-app div.applic-app-text p {
+    color: #707b8e;
+    font-size: 16px;
+    line-height: 2;
+}
+
+div.applic-app div.applic-app-picture {
+   margin-top: 120px;
+}
+
+div.applic-app div.applic-app-picture img {
+    float: left;
+    display: block;  
+    width: 15%;
+}
+
+div.applic-app div.applic-app-picture img.mg {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+/* End Applic App Section */
+
+/*background-image: -webkit-linear-gradient(0deg, #f9218d 0%, #6c19f6 100%); */
+/* Start Pricing Section */
+div.pricing {
+    width: 100%;
+    height: 100vh;
+    padding-top: 250px;
+    padding-bottom: 0px;
+    background-image: -webkit-linear-gradient(0deg, #f9218d 0%, #6c19f6 100%); 
+    position: relative;
+    
+}
+
+div.pricing div.pricing-header {
+    position: absolute;
+    top: 8%;
+    left: 32%;
+    width: 40%;
+    margin: 0px auto 80px auto;
+    color: #fff;
+}
+
+div.pricing div.pricing-header h3 {
+    font-size: 50px;
+}
+
+div.pricing div.pricing-header p {
+    margin: auto;
+    width: 60%;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+div.pricing div.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+div.pricing div.container div.pricing-items {
+    width: 100%;
+    margin: auto;
+}
+
+div.pricing-item1,div.pricing-item2, div.pricing-item3 {
+    float: left;
+    width: 30%;
+    height: 520px;
+}
+
+div.pricing-item1 {
+    border-radius: 8px;
+    background-color: #fff;
+    position: relative;
+}
+
+div.pricing-item1 div.pricing-item1-title {
+    width: 90%;
+    height: 35%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+div.pricing-item1 div.pricing-item1-title h4 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #57667e;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+div.pricing-item1 div.pricing-item1-title p {
+    font-size: 16px;
+    color: #6a56a6;
+}
+
+div.pricing-item1 div.pricing-item1-title p span {
+    font-size: 50px;
+    font-weight: 300;
+    color: #6a56a6;
+}
+
+div.pricing-item1 ul {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.pricing-item1 ul li {
+    color: #717081;
+    line-height: 2.2;
+    display: block;
+    text-align: center;
+}
+
+div.pricing-item1 a {
+    display: block;
+    width: 60%;
+    margin: auto;
+    background: #712fda;
+    border-radius: 6px;
+    transition: background-color 0.5s;
+}
+ 
+div.pricing-item1 a span {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 20px;
+}
+
+div.pricing-item1:hover a {
+    background-color: #f9218d;
+}
+
+
+div.pricing-item2 {
+    border-radius: 8px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+div.pricing-item2 div.pricing-item2-title {
+    width: 90%;
+    height: 35%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+div.pricing-item2 div.pricing-item2-title h4 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #57667e;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+div.pricing-item2 div.pricing-item2-title p {
+    font-size: 16px;
+    color: #6a56a6;
+}
+
+div.pricing-item2 div.pricing-item2-title p span {
+    font-size: 50px;
+    font-weight: 300;
+    color: #6a56a6;
+}
+
+div.pricing-item2 ul {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.pricing-item2 ul li {
+    color: #717081;
+    line-height: 2.2;
+    display: block;
+    text-align: center;
+}
+
+div.pricing-item2 a {
+    display: block;
+    width: 60%;
+    margin: auto;
+    background: #712fda;
+    border-radius: 6px;
+    transition: background-color 0.5s;
+}
+ 
+div.pricing-item2 a span {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 20px;
+}
+
+div.pricing-item2:hover a {
+    background-color: #f9218d;
+}
+
+div.pricing-item3 {
+    border-radius: 8px;
+    background-color: #fff;
+    position: relative;
+}
+
+div.pricing-item3 div.pricing-item3-title {
+    width: 90%;
+    height: 35%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+div.pricing-item3 div.pricing-item3-title h4 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #57667e;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+div.pricing-item3 div.pricing-item3-title p {
+    font-size: 16px;
+    color: #6a56a6;
+}
+
+div.pricing-item3 div.pricing-item3-title p span {
+    font-size: 50px;
+    font-weight: 300;
+    color: #6a56a6;
+}
+
+div.pricing-item3 ul {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.pricing-item3 ul li {
+    color: #717081;
+    line-height: 2.2;
+    display: block;
+    text-align: center;
+}
+
+div.pricing-item3 a {
+    display: block;
+    width: 60%;
+    margin: auto;
+    background: #712fda;
+    border-radius: 6px;
+    transition: background-color 0.5s;
+}
+
+div.pricing-item3 a span {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 20px;
+}
+
+div.pricing-item3:hover a {
+    background-color: #f9218d;
+}
+
+
+/* End Pricing Section */
+
+
+
+/* Start Services Section */
+div.services {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0 80px 0;
+    background-color:#F4FEFF;;
+}
+
+div.services div.services-header {
+    width: 40%;
+    margin: 0px auto 80px auto;
+}
+
+div.services div.services-header h3 {
+    font-size: 50px;
+}
+
+div.services div.services-header p {
+    margin: auto;
+    width: 60%;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+div.services div.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+div.services div.container div.services-items {
+    width: 100%;
+    margin: auto;
+}
+
+div.services-items1,div.services-items2, div.services-items3 {
+    float: left;
+    width: 30%;
+    height: 450px;
+}
+
+div.services-items div.services-items1 {
+    float: left;
+    width: 30%;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+div.services-items div.services-items1 div.icon {
+    width: 100%;
+    height: 35%;
+    padding-top: 80px;
+    background-image: url("../img/shape/dot-bg.png") ;
+    background-repeat: no-repeat;
+    background-position: 63%,0%;
+    transition: background-position 0.5s;
+}
+
+
+div.services-items div.services-items1 span.icon {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e88cea;
+    transition: background 0.5s;
+}
+
+div.services-items div.services-items1 span.icon i {
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+div.services-items div.services-items1 p {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 35px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+div.services-items div.services-items1 p:hover {
+    color: #835EF8;
+}
+
+div.services-items div.services-items1 span.title {
+    color: #707b8e;
+    line-height: 1.7;
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+div.services-items div.services-items1:hover span.icon {
+    background-color: #835ef8;
+}
+
+div.services-items div.services-items1:hover div.icon{
+    background-position: 65%,0%;
+}
+
+
+div.services-items div.services-items2 {
+    float: left;
+    width: 30%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #707b8e;
+}
+
+div.services-items div.services-items2 div.icon {
+    width: 100%;
+    height: 35%;
+    padding-top: 80px;
+    background-image: url("../img/shape/dot-bg.png") ;
+    background-repeat: no-repeat;
+    background-position: 63%,0%;
+    transition: background-position 0.5s;
+}
+
+
+div.services-items div.services-items2 span.icon {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e88cea;
+    transition: background 0.5s;
+}
+
+div.services-items div.services-items2 span.icon i {
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+div.services-items div.services-items2 p {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 35px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+div.services-items div.services-items2 p:hover {
+    color: #835EF8;
+}
+
+div.services-items div.services-items2 span.title {
+    color: #707b8e;
+    line-height: 1.7;
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+div.services-items div.services-items2:hover span.icon {
+    background-color: #835ef8;
+}
+
+div.services-items div.services-items2:hover div.icon{
+    background-position: 65%,0%;
+}
+
+
+div.services-items div.services-items3 {
+    float: left;
+    width: 30%;
+    border-radius: 8px;
+    background-color: #fff;
+
+}
+
+div.services-items div.services-items3 div.icon {
+    width: 100%;
+    height: 35%;
+    padding-top: 80px;
+    background-image: url("../img/shape/dot-bg.png") ;
+    background-repeat: no-repeat;
+    background-position: 63%,0%;
+    transition: background-position 0.5s;
+}
+
+
+div.services-items div.services-items3 span.icon {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e88cea;
+    transition: background 0.5s;
+}
+
+div.services-items div.services-items3 span.icon i {
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+div.services-items div.services-items3 p {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 35px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+div.services-items div.services-items3 p:hover {
+    color: #835EF8;
+}
+
+div.services-items div.services-items3 span.title {
+    color: #707b8e;
+    line-height: 1.7;
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+div.services-items div.services-items3:hover span.icon {
+    background-color: #835ef8;
+}
+
+div.services-items div.services-items3:hover div.icon{
+    background-position: 65%,0%;
+}
+
+/* End Services Section */
+
+
+/* Start Customers Section*/
+div.customers {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0 80px 0;
+}
+
+div.customers div.customers-header {
+    width: 40%;
+    margin: auto auto 100px auto;
+}
+
+div.customers div.customers-header h3 {
+    font-size: 50px;
+}
+
+div.customers div.customers-header p {
+    margin: auto;
+    width: 60%;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+div.customers div.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+div.customers div.container div.customers-items {
+    width: 100%;
+    margin: auto;
+}
+
+div.customers-items1,div.customers-items2, div.customers-items3 {
+    float: left;
+    width: 25%;
+    height: 350px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+div.customers-items div.customers-items1 {
+    transition: opacity 0.5s;
+}
+
+div.customers-items div.customers-items1 div.image {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+div.customers-items div.customers-items1 p {
+    font-size: 25px;
+    color: #712fda;
+    margin-bottom: 20px;
+}
+
+div.customers-items div.customers-items1 span.title {
+    color: #707b8e;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+div.customers-items div.customers-items2 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+
+div.customers-items div.customers-items2 div.image {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+div.customers-items div.customers-items2 p {
+    font-size: 25px;
+    color: #712fda;
+    margin-bottom: 20px;
+}
+
+div.customers-items div.customers-items2 span.title {
+    color: #707b8e;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+div.customers-items div.customers-items3 {
+    transition: opacity 0.5s;
+}
+
+div.customers-items div.customers-items3 div.image {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+div.customers-items div.customers-items3 p {
+    font-size: 25px;
+    color: #712fda;
+    margin-bottom: 20px;
+}
+
+div.customers-items div.customers-items3 span.title {
+    color: #707b8e;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+div.customers-items1, div.customers-items3 {
+    opacity: 0.4;
+}
+
+div.customers-items1:hover {
+    opacity: 1;
+}
+
+div.customers-items3:hover {
+    opacity: 1;
+}
+
+div.bullets {
+    width: 10%;
+    margin: 50px auto;
+    position: relative;
+}
+
+div.bullets span.bullet1, span.bullet2, span.bullet3 {
+    width: 10px;
+    height: 10px;
+    background-color: #ec5252;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+div.bullets span.bullet4 {
+    width: 16px;
+    height: 16px;
+    background-color: #ec5252;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 45px;
+    cursor: pointer;
+}
+
+/* End Customers Section */
+
+/* Start Devices Section*/
+div.devices {
+    width: 100%;
+    height: 100vh;
+    background-image: -webkit-linear-gradient(0deg, #6c19f6 0%, #f9218d 100%);
+}
+
+div.devices-text {
+    width: 50%;
+    height: 100vh;
+    float: left;
+   /* background-color: #6C19FF;*/
+    position: relative;
+}
+
+div.devices-text div.devices-text-item {
+    width: 60%;
+    margin: 160px auto;
+}
+
+
+div.devices-text div.devices-text-item h5.devices-text-header {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+div.devices-text  div.devices-text-item p.devices-text-title {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+div.devices-text div.devices-text-item img.app_btn1 {
+    margin-right: 12px;
+}
+
+div.devices-text img.card-dot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+div.devices-picture {
+    width: 50%;
+    height: 100vh;
+    float: right;
+    /*background-color: #F921FF;*/
+}
+
+div.devices-picture img {
+    width: 75%;
+    margin: 160px auto;
+    display: block;
+}
+
+/* End Devices Section*/
+
+/* Start Contact Section */
+div.contact {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+div.contact div.left, div.right {
+    float: left;  
+    width: 50%; 
+}
+
+div.contact div.left {
+    position: relative;
+    
+}
+
+div.contact div.left div.left-title {
+    margin-top: 80px;
+    margin-left: 300px;
+}
+
+
+div.contact div.left div.left-title p {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+div.contact div.left img {
+    position: absolute;
+    left: -160px;
+    bottom: -200px;
+
+}
+
+div.contact div.right {
+    position: relative;
+    margin-right: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+div.contact div.right img {
+    position: absolute;
+    right: 0;
+    bottom: -290px;
+   
+}
+
+div.contact div.right a {
+    position: absolute;
+    top: 108px;
+    left: 390px;
+    border-radius: 30px;
+    background: #f9218d;
+    transition: bachground-color 0.5s;
+}
+
+div.contact div.right a span {
+    display: block;
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+    color: #fff;
+    font-size: 16px;
+}
+
+div.contact div.right a:hover {
+    background-color: #dc3545;
+}
+
+/* End Contact Section */
+
+
+/* Start Support Section */
+div.support {
+    width: 100%;
+    height: 70vh;
+}
+
+div.support div.container {
+    width: 80%;
+    height: 70vh;
+    margin: 180px auto 0;
+    position: relative;
+}
+
+div.support-title div.support-title-items div.support-title-item1, div.support-title-item2, div.support-title-item3 {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+div.support-title-items div.support-title-item1  {
+    margin-right: 30px;
+}
+
+div.support-title-items div.support-title-item1 img {
+    margin-bottom: 20px;
+}
+
+
+div.support-title-items div.support-title-item1 p {
+    color: #868c98;
+    font-weight: 300;
+    line-height: 2;
+}
+
+div.support-title-items div.support-title-item2 h6 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+div.support-title-items div.support-title-item2 ul li {
+    color: hsl(220, 8%, 56%);
+    font-weight: 300;
+    line-height: 2.3;
+}
+
+div.support-title-items div.support-title-item3 h6 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+div.support-title-items div.support-title-item3 ul li {
+    color: #868c98;
+    font-weight: 300;
+    line-height: 2.3;
+    margin-left: 20px;
+}
+
+div.support-title-items div.support-title-item4 h6 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+div.support-title-items div.support-title-item4 p {
+    color: #868c98;
+    font-weight: 300;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+div.support-title-items div.support-title-item4 input {
+    padding: 15px;
+    background: #f9f9fe;
+    border: 0;
+}
+
+div.support-title-items div.support-title-item4 {
+    position: relative;
+}
+
+div.support-title-items div.support-title-item4 span {
+    display: inline-block;
+    position: absolute;
+    top: 152px;
+    left: 1128px;
+    width: 50px;
+    height: 46px;
+    background-color: #8f1bdc;
+}
+
+div.support-title-items div.support-title-item4 span img {
+    display: block;
+    margin: 12px auto;
+}
+
+div.support div.container >p {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    color: #868c98;
+}
+
+div.support div.container >p span {
+    color: #f9218d;
+}
+
+div.support div.container >p a {
+    color: #f9218d;
+}
+/* End Support Section */
